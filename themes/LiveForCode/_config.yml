@@ -7,11 +7,11 @@ GitHubRepositories: test
 
 # ---- 基础信息配置 ----
 # 博主名称, 文章后缀和主页图片上都会使用此名称
-BlogUser: Hao Zhou
+BlogUser: 周浩
 # 用户头像URL
 BlogAvatar: /image/sidebar/head.jpeg
 # 创建时间
-BlogStartDate: "2020-01-01"
+BlogStartDate: "2022-07-01"
 
 
 # ---- 网站配置 ----
