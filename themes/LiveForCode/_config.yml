@@ -188,11 +188,11 @@ FooterStyle: 2
 # 页脚标语
 BottomText: 
   # 图标  
-  icon: like-fill
+  icon: like-fill_
   # 图标左侧文字
-  left: 江畔何人初见月 
+  left: 京ICP备2022020915号
   # 图标右侧文字
-  right: 江月何年初照人
+  right: 
 # 是否显示主题信息
 ThemeInfo: false
 
