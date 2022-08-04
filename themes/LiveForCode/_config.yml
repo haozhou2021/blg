@@ -188,11 +188,11 @@ FooterStyle: 2
 # 页脚标语
 BottomText: 
   # 图标  
-  icon: like-fill_
+  icon: like-fill
   # 图标左侧文字
-  left: 京ICP备2022020915号
+  left: 当时明月在
   # 图标右侧文字
-  right: 
+  right: 曾照彩云归
 # 是否显示主题信息
 ThemeInfo: false
 
