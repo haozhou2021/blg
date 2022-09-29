@@ -26,7 +26,7 @@ function kill_process_by_pid() {
 
 function start_hexo() { 
     echo 'nohup hexo s &!'
-    nohub hexo s &!
+    nohup hexo s &!
 
     echo 'deploy success!'
 }
