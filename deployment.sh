@@ -35,6 +35,7 @@ function start_hexo() {
 function main() {
     get_current_blg_pid $1
     kill_process_by_pid $pid
+    start_hexo 
 }
 
 port=4000
