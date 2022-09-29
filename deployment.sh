@@ -1,7 +1,7 @@
 # author:zhouhao
 
 function get_current_blg_pid() {
-    echo 'deploy start\n'
+    echo 'deploy start'
 
     port=$1
     pid=$(lsof -i:$port | awk 'NR>1 { print $2}')
@@ -11,7 +11,6 @@ function get_current_blg_pid() {
     fi
     
     echo 'port: '$port' -> pid:'$pid''
-    return $pid
 }
 
 function kill_process_by_pid() {
@@ -23,14 +22,14 @@ function kill_process_by_pid() {
     port=$1
     echo 'kill -9 '$port' '
     $(kill -9 $1)
-    
-    echo 'nohup hexo s &!'
-    $(nohub hexo s &!)
-
-    echo 'deploy success!'
-
 }
 
+function start_hexo() { 
+    echo 'nohup hexo s &!'
+    nohub hexo s &!
+
+    echo 'deploy success!'
+}
 
 ## main ##
 function main() {
