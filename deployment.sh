@@ -21,7 +21,7 @@ function kill_process_by_pid() {
 
     port=$1
     echo 'kill -9 '$port' '
-    $(kill -9 $1)
+    kill -9 $1
 }
 
 function start_hexo() { 
