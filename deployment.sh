@@ -1,8 +1,6 @@
 # author:zhouhao
 
 function get_current_blg_pid() {
-    echo 'deploy start'
-
     port=$1
     pid=$(lsof -i:$port | awk 'NR=1 { print $2}')
     if [[ $pid == "" ]]; then
@@ -28,14 +26,17 @@ function start_hexo() {
     echo 'nohup hexo s &!'
     nohup hexo s &!
 
-    echo 'deploy success!'
 }
 
 ## main ##
 function main() {
+    echo 'deploy start'
+
     get_current_blg_pid $1
     kill_process_by_pid $pid
     start_hexo 
+    
+    echo 'deploy success!'
 }
 
 port=4000
