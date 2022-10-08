@@ -2,7 +2,7 @@
 
 function get_current_blg_pid() {
     port=$1
-    pid=$(lsof -i:$port | awk 'NR=2 { print $2}')
+    pid=$(lsof -i:$port | awk 'NR>1 { print $2}')
     if [[ $pid == "" ]]; then
         echo 'port:'$port' have no process'
         exit
